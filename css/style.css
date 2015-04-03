@@ -1,0 +1,29 @@
+.box {
+	height:200px;
+	color: orange;
+	background: blue url("http://lorempixel.com/200/400") no-repeat fixed center top;
+	background-size: cover;
+	position: relative;
+}
+
+.box h1:after {
+	content: " ";
+	display:inline-block;
+	height:100px;
+	width: 100px; 
+	background-color:gray; 
+}
+.box h1 {
+	display:inline;
+}
+
+.box:after {
+	content: " ";
+	position: absolute;
+	opacity: .3;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	background-color: yellow;
+}
